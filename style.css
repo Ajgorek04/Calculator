@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right top, #3db8ff, #0b0fe3);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 25px;
+}
+
+.calculator {
+  width: 400px;
+  min-height: 502px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.calculator_top,
+.calc_history {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 5px;
+  color: #fff;
+}
+
+.output {
+  min-height: 115px;
+  padding: 0px 10px 0px 10px;
+  text-align: end;
+}
+
+.output h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.output p {
+  font-size: 1.25rem;
+  color: #fff;
+  min-height: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.btn, .btn-znak {
+  border: 0;
+  min-width: 95px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover, .btn-znak:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.history {
+  width: 200px;
+  height: 502px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+#lista{
+  list-style: none;
+  color: #fff;
+}
+
+#lista li{
+  padding: 5px;
+}
+
+
+
+.clear_button{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#clear{
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+#clear:hover{
+  background-color: #fff;
+  color: #000;
+}

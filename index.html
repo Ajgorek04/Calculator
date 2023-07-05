@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="calculator_top">
+        <p class="top_tekst">🖩 Calculator</p>
+      </div>
+      <div class="output">
+        <p id="topoutput"></p>
+        <h1 id="output">0</h1>
+      </div>
+      <div class="buttons">
+        <button class="btn-znak" data-value="%">%</button>
+        <button class="btn-znak" data-value="CE">CE</button>
+        <button class="btn-znak" data-value="C">C</button>
+        <button class="btn-znak" data-value="⇦">⇦</button>
+
+        <button class="btn-znak" data-value="1/x">
+          <sup>1</sup>/<sub>x</sub>
+        </button>
+        <button class="btn-znak" data-value="x2">x<sup>2</sup></button>
+        <button class="btn-znak" data-value="√"><sup>2</sup>√x</button>
+        <button class="btn-znak" data-value="/">/</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn-znak" data-value="X">X</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn-znak" data-value="-">-</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn-znak" data-value="+">+</button>
+
+        <button class="btn-znak" data-value="+/-">+/-</button>
+        <button class="btn" data-value="0">0</button>
+        <button class="btn-znak" data-value=".">.</button>
+        <button class="btn-znak" data-value="=">=</button>
+      </div>
+    </div>
+    <div class="history">
+      <p class="calc_history">Calculation history</p>
+      <ul id="lista">
+        <li> Example 1 </li>
+      </ul>
+      <div class="clear_button">
+        <button id="clear"> Clear History</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
